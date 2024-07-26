@@ -1,10 +1,10 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import InputContainer from '../components/InputContainer.astro';
+import { InputContainer } from '../components/InputContainer.jsx';
 ---
 
 <Layout title="Newsletter Sign-Up">
 	<main class="w-full h-full flex items-center justify-center">
-		<InputContainer />
+		<InputContainer client:visible />
 	</main>
 </Layout>
